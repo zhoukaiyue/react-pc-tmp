@@ -1,0 +1,88 @@
+{
+    "name": "react-pc-tmp",
+    "version": "v1.3.1",
+    "private": true,
+    "dependencies": {
+        "@ant-design/icons": "^5.2.6",
+        "@craco/craco": "6.4.5",
+        "@reduxjs/toolkit": "1.8.3",
+        "@testing-library/jest-dom": "5.16.4",
+        "@testing-library/react": "13.3.0",
+        "@testing-library/user-event": "13.5.0",
+        "antd": "^5.11.5",
+        "axios": "0.27.2",
+        "clipboard-copy": "^4.0.1",
+        "css-minimizer-webpack-plugin": "^4.2.2",
+        "dotenv-cli": "6.0.0",
+        "es6-proxy-polyfill": "2.1.1",
+        "eslint-plugin-react-hooks": "4.6.0",
+        "events": "3.3.0",
+        "isomorphic-fetch": "3.0.0",
+        "lodash": "4.17.21",
+        "nprogress": "^0.2.0",
+        "nth-check": "2.1.1",
+        "postcss": "^8.4.32",
+        "prop-types": "^15.8.1",
+        "qs": "^6.11.2",
+        "react": "^18.2.0",
+        "react-app-polyfill": "3.0.0",
+        "react-dom": "^18.2.0",
+        "react-redux": "8.0.2",
+        "react-router-dom": "^6.14.1",
+        "react-scripts": "5.0.1",
+        "source-map-explorer": "2.5.2",
+        "tailwindcss": "^3.3.7",
+        "web-vitals": "2.1.4"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "7.18.10",
+        "autoprefixer": "10.4.7",
+        "eslint": "8.21.0",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-config-standard": "17.0.0",
+        "eslint-plugin-import": "2.26.0",
+        "eslint-plugin-n": "15.2.4",
+        "eslint-plugin-prettier": "4.2.1",
+        "eslint-plugin-promise": "6.0.0",
+        "eslint-plugin-react": "7.30.1",
+        "prettier": "2.7.1",
+        "sass": "1.54.0",
+        "sass-loader": "13.0.2"
+    },
+    "scripts": {
+        "start": "dotenv -e .env.development craco start",
+        "build": "dotenv -e .env.production craco  build",
+        "build:test": "dotenv -e .env.test craco  build",
+        "build:prod": "dotenv -e .env.production craco  build",
+        "eject": "react-scripts eject",
+        "lint:prettier": "npx prettier --write src/  --config ./.prettierrc.js",
+        "lint:fix": "npx eslint --ext .js,.jsx ./ --fix",
+        "analyze": "source-map-explorer 'build/static/js/*.js'"
+    },
+    "scripts-info": {
+        "start": "运行开发环境服务器",
+        "build": "构建生产程序包",
+        "build:prod": "构建生产程序包",
+        "build:test": "构建灰度程序包",
+        "lint:prettier": "格式化src/下所有文件",
+        "lint:fix": "对src/.js文件进行lint，并尝试修复一些格式类的错误，语法类需要手动修复",
+        "analyze": "该命令旨在分析捆绑包大小。你需要在test环境配置文件（.env.test）中设置 REACT_APP_GENERATE_SOURCEMAP 为 true，先运行 npm run build:test，然后运行  npm run analyze 即可"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version",
+            "ie 11"
+        ]
+    },
+    "engines": {
+        "node": ">=14",
+        "pnpm": ">=3"
+    }
+}
