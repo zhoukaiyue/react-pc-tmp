@@ -5,6 +5,18 @@ react-pc-tmp 是基于 Create React App（v5）的模板脚手架，集成了 An
 craco 是什么？
 craco（一个对 create-react-app 进行自定义配置的社区解决方案） 对 create-react-app 的默认配置进行自定义设置。
 
+# 支持的平台
+
+## 浏览器
+
+不支持 IE 浏览器。
+
+`Edge`、`Firefox`、`Chrome`、`Safari` 等现代浏览器的最新的 2 个版本确保会被支持。
+
+对于这些浏览器的其他版本中，由于开发资源的限制并没有做过严格的测试。但是我预期 react-pc-tmp 应该在这些浏览器不算太老的版本上能正常的运行（比如 2 年之内的版本）。如果你发现了任何问题欢迎来提 issue。
+
+# 技术规范
+
 ## 环境要求
 
 -   node >14
