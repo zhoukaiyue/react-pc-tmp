@@ -1,10 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion: 页面标题组件
  * @version:
  * @Author: zhoukai
  * @Date: 2023-12-20 14:15:22
  * @LastEditors: zhoukai
- * @LastEditTime: 2023-12-20 14:15:32
+ * @LastEditTime: 2023-12-22 11:34:40
  */
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
@@ -27,8 +27,8 @@ const BasePageTitle = ({ element: Component, meta }) => {
 
 // 定义 BasePageTitle 的 PropTypes
 BasePageTitle.propTypes = {
-    // element 属性为必须的 React 元素
-    element: PropTypes.element.isRequired,
+    // element 属性为 React 组件对象
+    element: PropTypes.object.isRequired,
     // meta 属性为包含 title 字符串的对象
     meta: PropTypes.shape({
         title: PropTypes.string
