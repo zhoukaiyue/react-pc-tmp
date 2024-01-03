@@ -4,7 +4,7 @@
  * @Author: zhoukai
  * @Date: 2023-12-19 17:06:54
  * @LastEditors: zhoukai
- * @LastEditTime: 2023-12-20 09:41:25
+ * @LastEditTime: 2024-01-03 15:37:45
  */
 
 const path = require('path');
@@ -113,7 +113,7 @@ module.exports = {
                         // 组件库,都打包到vendors/ui下面
                         'vendors/ui': {
                             name: 'vendors/ui',
-                            test: /[\\/]node_modules[\\/](antd)[\\/]/,
+                            test: /[\\/]node_modules[\\/](antd|tailwindcss)[\\/]/,
                             priority: 5
                         },
                         // 默认缓存组 当一个文件被引入超过四次的时候 也分包成一个文件

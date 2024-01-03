@@ -13,6 +13,7 @@
         "axios": "0.27.2",
         "clipboard-copy": "^4.0.1",
         "css-minimizer-webpack-plugin": "^4.2.2",
+        "cssnano": "^6.0.2",
         "dotenv-cli": "6.0.0",
         "es6-proxy-polyfill": "2.1.1",
         "eslint-plugin-react-hooks": "4.6.0",
