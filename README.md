@@ -1,6 +1,6 @@
 # 简介
 
-react-pc-tmp 是基于 Create React App（v5）的模板脚手架，集成了 Ant Design 5、JavaScript、carco、Redux、Sass、Tailwind、CSS、Axios（封装）、ESLint、Prettier、lodashjs 等流行技术栈构建 PC 端模板脚手架，开箱即用。
+react-pc-tmp 是基于 Create React App（v5）的模板脚手架，集成了 Ant Design 5、JavaScript、carco、Redux、Sass + CSS Moudles 、Tailwind、CSS、Axios（封装）、ESLint、Prettier、lodashjs 等流行技术栈构建 PC 端模板脚手架，开箱即用。
 
 craco 是什么？
 craco（一个对 create-react-app 进行自定义配置的社区解决方案） 对 create-react-app 的默认配置进行自定义设置。
@@ -110,7 +110,7 @@ src
    └─ router
       |- index.js
       |- dev.js
-      |- home.js
+      └─ home.js
 ```
 
 ### 接口文件创建与命名。 【注：src/config/apis 目录。】
@@ -122,8 +122,7 @@ src
 src
 └─ config
    └─ apis
-      |- index.js
-      |- home.js
+      └─ index.js
 ```
 
 ### 状态切片文件创建与命名。 【注：src/config/store 目录。】
@@ -136,9 +135,7 @@ src
 └─ config
    └─ store
       └─ dev
-         |- index.js
-      └─ home
-         |- index.js
+         └─ index.js
 ```
 
 ### 图片资源。 【注：src/assets/img 目录。】
@@ -150,9 +147,6 @@ src
 src
 └─ assets
    └─ img
-      |- index
-      |- dev
-      |- base
 ```
 
 ## git 版本规范
