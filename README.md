@@ -25,7 +25,6 @@ craco（一个对 create-react-app 进行自定义配置的社区解决方案）
 ## 编辑器以及对应扩展
 
 -   Visual Studio v69+
--   Vetur v0.35.0+
 -   Eslint v2.2.6+
 -   Prettier - Code formatter v9.5.0+
 -   Tailwind CSS IntelliSense v0.9.1+
